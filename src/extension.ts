@@ -98,9 +98,9 @@ export function activate(context: vscode.ExtensionContext) {
 				 */
 				files.sort((a, b) => b.localeCompare(a));
 
-				return await vscode.window.showQuickPick(files, {
+				return await vscode.window.showQuickPick(files.map(f => ({label: f})), {
 					canPickMany: false,
-					prompt: 'Choose coredump file',
+					title: 'Choose coredump file'
 				});
 			} catch (err) {
 				logger.error(err as any);
