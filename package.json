@@ -1,7 +1,8 @@
 {
   "name": "pick-coredump",
   "displayName": "Pick coredump",
-  "description": "Command to find coredump file",
+  "description": "Command to find and pick coredump file",
+  "publisher": "ash-blade",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"
@@ -9,6 +10,11 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "url": "https://github.com/ashenBlade/vscode-pick-coredump.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/ashenBlade/vscode-pick-coredump",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
